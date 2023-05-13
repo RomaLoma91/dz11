@@ -16,21 +16,6 @@ class Field:
     def value(self, value):
         self._value = value
 
-    def set_name(self, name):
-        self.name = name
-
-    def set_value(self, value):
-        self.value = value
-
-    def get_name(self):
-        return self.name
-
-    def get_value(self):
-        return self.value
-
-    def validate(self, value):
-        return True
-
     def __repr__(self):
         return f"{self.__class__.__name__}({self._value})"
 
